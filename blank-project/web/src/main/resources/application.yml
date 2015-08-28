@@ -1,0 +1,18 @@
+spring.application.name: blank-web
+
+logging.level.ninja.cero.springboot.blank.web: DEBUG
+logging.level.ninja.cero.springboot.blank.framework.aop.DumpLogger: TRACE
+logging.level.org.springframework.jdbc.core.JdbcTemplate: TRACE
+
+spring.datasource:
+  url: jdbc:h2:mem:test
+  username: sa
+  password:
+  driver-class-name: org.h2.Driver
+  max-active: 10
+  max-idle: 8
+  min-idle: 8
+  initial-size: 10
+  validation-query: select 1
+  test-on-borrow: true
+  test-on-return: false
