@@ -17,7 +17,7 @@ public class ControllerConfig extends ControllerExceptionHandler {
     /**
      * クエリ文字列や、FormからPOSTした値の変換（セッション中には説明せず）。<br>
      * 空文字はnullに変換することで、たとえば「入力した場合に限り最低8文字のバリデーションを行う」ことができる。<br>
-     * LocalDateクラスを
+     * yyyy-MM-dd形式の文字列を、LocalDateクラスにマッピングする。
      * @param binder WebDataBinder
      */
     @InitBinder
